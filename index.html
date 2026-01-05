@@ -3,30 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siri Teja | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <title>Portfolio</title>
 </head>
 <body>
-    <header>
-        <p>SIRI TEJA BOLAPATI</p>
 
-        <div class="header-links">
-            <a href="Home.html">Home</a>
-            <a href="Aboutme.html">About Me</a>
-            <a href="Contact.html">Contact</a>
-            <button>=</button>
-        </div> 
-    </header>
-    <div class="divider">
-    <section class="left-section">
-        <img src="profile.jpg" alt="Profile Picture" style="width: auto;height:750px;">
-    </section>
-    <section class="right-section">
-        <h1>My ----------<br>Portfolio</h1>
-        <p>This is my Portfolio webpage</p>
-        <button>Explore Now</button>
-        <button>Play video</button>
-    </section>
+<!-- ===== NAVBAR ===== -->
+<header class="navbar">
+    <div class="logo">SIRI TEJA</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- ===== HERO SECTION ===== -->
+<section id="home" class="hero">
+    <div class="hero-text">
+        <h1>Hello, I’m <span>Siri Teja</span></h1>
+        <h2>Aspiring Software Developer</h2>
+        <p>
+            I build clean, responsive, and user-friendly web applications with a strong focus on fundamentals and performance.
+        </p>
+        <a href="#projects" class="btn">View Projects</a>
     </div>
+
+    <div class="hero-image">
+        <img src="profile.jpg" alt="Profile Picture">
+    </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+        I am a passionate Computer Science student with strong knowledge in web development, databases, and problem-solving.
+        I enjoy creating clean interfaces and scalable backend logic.
+    </p>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section id="skills" class="section light">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>SQL</span>
+        <span>Java</span>
+        <span>Python</span>
+    </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+        <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>Responsive personal portfolio using HTML & CSS.</p>
+        </div>
+        <div class="project-card">
+            <h3>Product Management System</h3>
+            <p>Database-driven system using SQL and stored procedures.</p>
+        </div>
+        <div class="project-card">
+            <h3>Web Gallery</h3>
+            <p>Art gallery website with classic UI design.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="section light">
+    <h2>Contact</h2>
+    <p>Email: siriteja@example.com</p>
+    <p>LinkedIn | GitHub</p>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+    <p>© 2026 Siri Teja Bolapati. All Rights Reserved.</p>
+</footer>
+
 </body>
 </html>
