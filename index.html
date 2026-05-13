@@ -3,91 +3,327 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Siri Teja | Portfolio</title>
+    <meta name="description" content="Portfolio of Siri Teja Bolapati, a second-year CSE student at KLU focused on Java full stack development and React JS.">
+    <meta name="theme-color" content="#11110f">
+    <title>Siri Teja Bolapati | Java Full Stack Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-<!-- ===== NAVBAR ===== -->
-<header class="navbar">
-    <div class="logo">SIRI TEJA</div>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
+    <header class="site-header" data-header>
+        <a class="brand" href="#home" aria-label="Siri Teja Bolapati portfolio home">
+            <span class="brand-mark">ST</span>
+            <span class="brand-copy">
+                <strong>Siri Teja</strong>
+                <small>Java Full Stack</small>
+            </span>
+        </a>
 
-<!-- ===== HERO SECTION ===== -->
-<section id="home" class="hero">
-    <div class="hero-text">
-        <h1>Hello, I’m <span>Siri Teja</span></h1>
-        <h2>Aspiring Software Developer</h2>
-        <p>
-            I build clean, responsive, and user-friendly web applications with a strong focus on fundamentals and performance.
-        </p>
-        <a href="#projects" class="btn">View Projects</a>
-    </div>
+        <nav class="primary-nav" data-nav aria-label="Primary navigation">
+            <a class="nav-link is-active" href="#home">Home</a>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#skills">Skills</a>
+            <a class="nav-link" href="#projects">Projects</a>
+            <a class="nav-link" href="#contact">Contact</a>
+        </nav>
 
-    <div class="hero-image">
-        <img src="profile.jpg" alt="Profile Picture">
-    </div>
-</section>
-
-<!-- ===== ABOUT ===== -->
-<section id="about" class="section">
-    <h2>About Me</h2>
-    <p>
-        I am a passionate Computer Science student with strong knowledge in web development, databases, and problem-solving.
-        I enjoy creating clean interfaces and scalable backend logic.
-    </p>
-</section>
-
-<!-- ===== SKILLS ===== -->
-<section id="skills" class="section light">
-    <h2>Skills</h2>
-    <div class="skills-grid">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>SQL</span>
-        <span>Java</span>
-        <span>Python</span>
-    </div>
-</section>
-
-<!-- ===== PROJECTS ===== -->
-<section id="projects" class="section">
-    <h2>Projects</h2>
-    <div class="projects-grid">
-        <div class="project-card">
-            <h3>Portfolio Website</h3>
-            <p>Responsive personal portfolio using HTML & CSS.</p>
+        <div class="header-actions">
+            <button class="icon-button theme-toggle" type="button" data-theme-toggle aria-label="Switch theme">
+                <span class="theme-icon" aria-hidden="true"></span>
+            </button>
+            <button class="icon-button nav-toggle" type="button" data-nav-toggle aria-label="Open menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-        <div class="project-card">
-            <h3>Product Management System</h3>
-            <p>Database-driven system using SQL and stored procedures.</p>
-        </div>
-        <div class="project-card">
-            <h3>Web Gallery</h3>
-            <p>Art gallery website with classic UI design.</p>
-        </div>
+    </header>
+
+    <main id="main">
+        <section class="hero section" id="home" data-section>
+            <div class="hero-content reveal">
+                <p class="eyebrow">Second-Year CSE Student at KLU</p>
+                <h1>Siri Teja Bolapati</h1>
+                <p class="hero-title">
+                    I build <span data-role-text>Java full stack systems</span><span class="typing-cursor" aria-hidden="true"></span>
+                </p>
+                <p class="hero-copy">
+                    A lateral-entry Computer Science student with a 9.02 CGPA in semester 2, focused on elegant frontends,
+                    clean Java logic, practical databases, and project work that feels reliable from the first click.
+                </p>
+
+                <div class="hero-actions" aria-label="Primary actions">
+                    <a class="button button-primary" href="#projects">View Projects</a>
+                    <a class="button button-secondary" href="#contact">Contact Me</a>
+                </div>
+
+                <dl class="hero-metrics" aria-label="Portfolio highlights">
+                    <div>
+                        <dt data-counter="9.02">0</dt>
+                        <dd>Sem 2 CGPA</dd>
+                    </div>
+                    <div>
+                        <dt data-counter="3">0</dt>
+                        <dd>Featured projects</dd>
+                    </div>
+                    <div>
+                        <dt data-counter="2">0</dt>
+                        <dd>Academic paths</dd>
+                    </div>
+                </dl>
+            </div>
+
+            <div class="hero-visual reveal">
+                <figure class="portrait-panel">
+                    <img src="profile.jpg" alt="Portrait of Siri Teja Bolapati">
+                    <figcaption>
+                        <span>Current focus</span>
+                        <strong>Java Full Stack + React JS</strong>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="section about-section" id="about" data-section>
+            <div class="section-heading reveal">
+                <p class="eyebrow">About</p>
+                <h2>Building strong fundamentals with polished execution.</h2>
+            </div>
+
+            <div class="about-layout">
+                <div class="about-copy reveal">
+                    <p>
+                        I am a Computer Science Engineering student at KLU, currently in my second year after joining through
+                        lateral entry. Before KLU, I studied at A.A.N.M &amp; V.V.R.S.R Gudlavalleru Polytechnic, where I built
+                        the technical foundation that now supports my Java full stack and React JS work.
+                    </p>
+                    <p>
+                        I like projects that combine practical logic with a refined user experience, from event workflows to
+                        rental systems and responsive web interfaces. My goal is to become a developer who can think clearly
+                        across frontend, backend, and database layers.
+                    </p>
+
+                    <div class="focus-grid" aria-label="Development focus areas">
+                        <article class="focus-card">
+                            <span>01</span>
+                            <h3>Frontend polish</h3>
+                            <p>Responsive layouts, smooth interactions, and careful spacing.</p>
+                        </article>
+                        <article class="focus-card">
+                            <span>02</span>
+                            <h3>Backend logic</h3>
+                            <p>Java-based workflows, validation, and structured system design.</p>
+                        </article>
+                        <article class="focus-card">
+                            <span>03</span>
+                            <h3>Database thinking</h3>
+                            <p>Organized data models for real project requirements.</p>
+                        </article>
+                    </div>
+                </div>
+
+                <aside class="timeline reveal" aria-label="Education timeline">
+                    <article class="timeline-item">
+                        <span class="timeline-dot"></span>
+                        <p>Currently</p>
+                        <h3>KLU</h3>
+                        <span>Second-year CSE student with 9.02 semester 2 CGPA.</span>
+                    </article>
+                    <article class="timeline-item">
+                        <span class="timeline-dot"></span>
+                        <p>Foundation</p>
+                        <h3>A.A.N.M &amp; V.V.R.S.R Gudlavalleru Polytechnic</h3>
+                        <span>Diploma background that shaped my lateral-entry path.</span>
+                    </article>
+                </aside>
+            </div>
+        </section>
+
+        <section class="section skills-section" id="skills" data-section>
+            <div class="section-heading reveal">
+                <p class="eyebrow">Skills</p>
+                <h2>Frontend finesse backed by Java full stack depth.</h2>
+            </div>
+
+            <div class="skills-layout">
+                <div class="skill-card reveal" data-skill-card>
+                    <div class="skill-head">
+                        <h3>Java Full Stack</h3>
+                        <span data-skill-value>88%</span>
+                    </div>
+                    <div class="skill-track" aria-hidden="true">
+                        <span data-level="88"></span>
+                    </div>
+                </div>
+                <div class="skill-card reveal" data-skill-card>
+                    <div class="skill-head">
+                        <h3>React JS</h3>
+                        <span data-skill-value>82%</span>
+                    </div>
+                    <div class="skill-track" aria-hidden="true">
+                        <span data-level="82"></span>
+                    </div>
+                </div>
+                <div class="skill-card reveal" data-skill-card>
+                    <div class="skill-head">
+                        <h3>HTML, CSS, JavaScript</h3>
+                        <span data-skill-value>92%</span>
+                    </div>
+                    <div class="skill-track" aria-hidden="true">
+                        <span data-level="92"></span>
+                    </div>
+                </div>
+                <div class="skill-card reveal" data-skill-card>
+                    <div class="skill-head">
+                        <h3>SQL &amp; Database Design</h3>
+                        <span data-skill-value>80%</span>
+                    </div>
+                    <div class="skill-track" aria-hidden="true">
+                        <span data-level="80"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="toolkit reveal" aria-label="Tools and technologies">
+                <span>Java</span>
+                <span>React JS</span>
+                <span>JavaScript</span>
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>SQL</span>
+                <span>GitHub Pages</span>
+                <span>Responsive UI</span>
+            </div>
+        </section>
+
+        <section class="section projects-section" id="projects" data-section>
+            <div class="section-heading reveal">
+                <p class="eyebrow">Projects</p>
+                <h2>Project work shaped around real user flows.</h2>
+            </div>
+
+            <div class="filter-bar reveal" role="list" aria-label="Project filters">
+                <button class="filter-button is-active" type="button" data-filter="all">All</button>
+                <button class="filter-button" type="button" data-filter="java">Java Full Stack</button>
+                <button class="filter-button" type="button" data-filter="react">React JS</button>
+                <button class="filter-button" type="button" data-filter="systems">Systems</button>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project-card reveal" data-category="java systems" data-title="Event Management System" data-stack="Java, SQL, HTML, CSS" data-impact="Manages event listings, registrations, attendee data, and organizer workflows in one structured system.">
+                    <div class="project-topline">
+                        <span>Featured</span>
+                        <span>Java</span>
+                    </div>
+                    <h3>Event Management System</h3>
+                    <p>
+                        A full stack concept for managing events, registrations, schedules, and participant records with a clean user flow.
+                    </p>
+                    <ul class="project-points">
+                        <li>Organizer and attendee views</li>
+                        <li>Registration workflow</li>
+                        <li>Database-ready structure</li>
+                    </ul>
+                    <button class="text-button" type="button" data-open-project>View details</button>
+                </article>
+
+                <article class="project-card reveal" data-category="java systems" data-title="Car Rental System" data-stack="Java, SQL, Frontend UI" data-impact="Handles vehicle listings, bookings, customer details, availability, and rental records with practical business logic.">
+                    <div class="project-topline">
+                        <span>Core project</span>
+                        <span>System</span>
+                    </div>
+                    <h3>Car Rental System</h3>
+                    <p>
+                        A rental workflow designed for browsing cars, managing booking data, and keeping the experience simple for users.
+                    </p>
+                    <ul class="project-points">
+                        <li>Booking and availability logic</li>
+                        <li>Customer record handling</li>
+                        <li>Admin-friendly structure</li>
+                    </ul>
+                    <button class="text-button" type="button" data-open-project>View details</button>
+                </article>
+
+                <article class="project-card reveal" data-category="react" data-title="React JS Interface Practice" data-stack="React JS, Components, CSS" data-impact="Builds confidence with reusable components, dynamic state, clean layouts, and interactive frontend behavior.">
+                    <div class="project-topline">
+                        <span>Frontend</span>
+                        <span>React</span>
+                    </div>
+                    <h3>React JS Interface Practice</h3>
+                    <p>
+                        Component-based frontend practice focused on reusable sections, fast interactions, and responsive design patterns.
+                    </p>
+                    <ul class="project-points">
+                        <li>Reusable UI components</li>
+                        <li>State-driven interactions</li>
+                        <li>Responsive layout systems</li>
+                    </ul>
+                    <button class="text-button" type="button" data-open-project>View details</button>
+                </article>
+            </div>
+        </section>
+
+        <section class="section contact-section" id="contact" data-section>
+            <div class="contact-layout">
+                <div class="contact-copy reveal">
+                    <p class="eyebrow">Contact</p>
+                    <h2>Let us build something clean, useful, and memorable.</h2>
+                    <p>
+                        I am open to frontend projects, Java full stack practice, academic collaborations, and internship-style work
+                        where I can learn by shipping.
+                    </p>
+                    <div class="contact-list">
+                        <a href="mailto:siriteja@example.com" data-email-link>siriteja@example.com</a>
+                        <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+                        <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+                    </div>
+                </div>
+
+                <form class="contact-form reveal" data-contact-form novalidate>
+                    <label>
+                        <span>Name</span>
+                        <input type="text" name="name" autocomplete="name" placeholder="Your name">
+                    </label>
+                    <label>
+                        <span>Email</span>
+                        <input type="email" name="email" autocomplete="email" placeholder="you@example.com">
+                    </label>
+                    <label>
+                        <span>Message</span>
+                        <textarea name="message" rows="5" placeholder="Tell me about the project"></textarea>
+                    </label>
+                    <button class="button button-primary" type="submit">Send Message</button>
+                    <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal" data-modal hidden>
+        <div class="modal-backdrop" data-close-modal></div>
+        <article class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <button class="modal-close" type="button" data-close-modal aria-label="Close project details">Close</button>
+            <p class="eyebrow">Project details</p>
+            <h2 id="modal-title">Project</h2>
+            <p data-modal-impact></p>
+            <dl>
+                <div>
+                    <dt>Stack</dt>
+                    <dd data-modal-stack></dd>
+                </div>
+                <div>
+                    <dt>Portfolio value</dt>
+                    <dd>Shows planning, user flow thinking, and practical full stack development.</dd>
+                </div>
+            </dl>
+        </article>
     </div>
-</section>
 
-<!-- ===== CONTACT ===== -->
-<section id="contact" class="section light">
-    <h2>Contact</h2>
-    <p>Email: siriteja@example.com</p>
-    <p>LinkedIn | GitHub</p>
-</section>
-
-<!-- ===== FOOTER ===== -->
-<footer>
-    <p>© 2026 Siri Teja Bolapati. All Rights Reserved.</p>
-</footer>
-
+    <footer class="site-footer">
+        <p>Designed and built by Siri Teja Bolapati.</p>
+        <a href="#home">Back to top</a>
+    </footer>
 </body>
 </html>
